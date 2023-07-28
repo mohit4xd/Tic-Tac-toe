@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.boddy{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(198, 239, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.side{
+    display: flex;
+    justify-content: space-around;
+    
+    font-size: 35px;
+}
+
+.trn , .trn2{
+
+    color: blue;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,.00001fr);
+
+}
+.cells{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 55px;
+    /* left: 38vw; */
+    height: 100px;
+    width: 100px;
+    background-color: rgb(209, 180, 255);
+    border: 1.5px solid rgb(253, 253, 253);;
+    font-size: 90px;
+
+}
+.cells:hover{
+    background-color:rgba(165, 117, 241, 0.795);
+}
+#c1,#c2,#c3{
+    border-top: none;
+}
+#c1,#c4,#c7{
+    border-left: none;
+}
+#c7,#c8,#c9{
+    border-bottom: none;
+}
+#c3,#c6,#c9{
+    border-right: none;
+}
+
+
+
+
+
+
+
+.disable{
+   pointer-events: none;
+}
+
+.on{
+    color: black;
+}
+.sbt{
+background-color: transparent;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 400px;
+width: 100%;
+
+margin-top: 50px;
+}
+
+.blur{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.btn {
+    background-color: rgb(141, 203, 240);
+    position: relative;
+    font-size: 20px;
+    height: 50px;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+
+    
+}
+.btn:hover{
+    background-color:rgb(72, 191, 255);
+}
+
+#lst{
+    color: rgb(0, 0, 58);
+    font-size: 40px;
+}
